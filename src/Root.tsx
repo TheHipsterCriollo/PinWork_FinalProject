@@ -1,53 +1,78 @@
 import * as React from 'react';
 
+import { General } from './General';
+
 export class Root extends React.Component<any,any>{
   
     state = {
-      lista: [],
-      nuevo: '',
+      serie: {
+        nombre: '',
+        resumen: '',
+        img: '',
+      },
+      activo: 'General'
     }
-    
-    agregarEstudiante(){
-      this.state.lista.push({
-        nombre: this.state.nuevo,
-        asistio: false
-      });
-      this.setState({ nuevo: '' });
-    }
-    
-    tacharEstudiante(index){
-      this.state.lista[index].asistio = !this.state.lista[index].asistio;
-      this.forceUpdate();
+  
+    componentWillMount(){
+      this.getGeneral();
     }
 
+    getGeneral(){
+      fetch('http://api.tvmaze.com/shows/1871')
+        .then(data => data.json())
+        .then(data => {
+          console.log(data)
+          this.setState({
+            serie: {
+              nombre: data.name,
+              resumen: data.summary,
+              img: data.image.medium
+            }
+          })
+        });
+    }
+
+  
+  
     render(){
+      const { activo } = this.state
+      const { nombre, resumen, img } = this.state.serie;
+      
+      const tabs = ['General', 'Episodios', 'Reparto'];
+      
       return <div>
-        {this.state.nuevo && <h2>Estudiante nuevo = {this.state.nuevo}</h2>}
-        
-        <input value={this.state.nuevo} onChange={(e) => this.setState({ nuevo: e.target.value })} />
-        
-        <button onClick={() => this.agregarEstudiante()}>agregar</button>
-
-        {this.state.lista.map((obj, i) => {
-          return <Estudiante key={obj.nombre}
-            onClick={() => this.tacharEstudiante(i)}
-            asistio={obj.asistio}
-            nombre={obj.nombre} />;
-        })}
-      </div>
+         <div className="container">
+           <div className="row">
+            <div className="col-sm-12">
+              <h2>{nombre}</h2>
+              
+              <ul className="nav nav-tabs">
+               {tabs.map((tab, i) => 
+                  <li className="nav-item" key={tab}>
+                    <a className={`nav-link ${activo == tab && 'active'}`} 
+                    href="#"
+                    onClick={() => this.setState({ activo: tab })}>{tab}</a>
+                  </li>
+                )}
+              </ul>
+            </div>
+           </div>
+           
+           {/* comentario */}
+           
+           {activo == 'General' && <General img={img} resumen={resumen} />}
+           {activo == 'Episodios'  && <Episodios />}
+            
+         </div>
+      </div>;
     }
 }
 
-class Estudiante extends React.Component<any, any>{
-  render(){
-    return <div 
-    
-    style={{ 
-      textDecoration: this.props.asistio && 'line-through',
-    }}>
-      {this.props.nombre} <button onClick={this.props.onClick}>
-        {this.props.asistio ? 'destachar' : 'tachar'}
-      </button>
-    </div>
-  }
-}
+
+
+
+
+
+
+
+
