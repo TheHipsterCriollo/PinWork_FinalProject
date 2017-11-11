@@ -1,4 +1,7 @@
 import * as React from 'react';
+import { ajax } from 'jquery';
+
+
 
 export class Root extends React.Component<any,any>{
     state = {
@@ -10,16 +13,15 @@ export class Root extends React.Component<any,any>{
     }
     
     getProjects(){
-        fetch('https://api.behance.net/v2/projects?q=motorcycle&client_id=UqSBClMILi0xJ2QvW7dPM5ppzqIpybVh', {
-            method: 'get',
-            mode: 'no-cors'
+        ajax({
+            url: 'https://api.behance.net/v2/projects?q=motorcycle&client_id=UqSBClMILi0xJ2QvW7dPM5ppzqIpybVh',
+            dataType: 'jsonp'
+        }).done((data) => {
+            console.log(data.projects);
+            this.setState({
+                projects: data.projects
+            });
         })
-            .then((e) => e.json())
-            .then((info) => {
-                this.setState({
-                    projects: info.projects
-                });
-            })
     }
     
   render(){
@@ -31,10 +33,11 @@ export class Root extends React.Component<any,any>{
         <div className="row">
             {this.state.projects.map((obj, index) => 
                 <Preview key={index}
-                    imagen={obj.covers['115']}
+                    imagen={obj.covers['404']}
                     titulo={obj.name}
                     texto={obj.fields[0]}
-                    btn={'go'}
+                    url={obj.url}
+                    btn="Go!"
                     />
             )}
         </div>
@@ -68,7 +71,7 @@ export class Preview extends React.Component<any,any>{
             <div className="card-body">
                 <h4 className="card-title">{this.props.titulo}</h4>
                 <p className="card-text">{this.props.texto}</p>
-                <a href="#" className="btn btn-primary">{this.props.btn}</a>
+                <a href={this.props.url} className="btn btn-primary">{this.props.btn}</a>
               </div>
             
         </div>
