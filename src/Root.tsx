@@ -5,18 +5,24 @@ import { Login } from './Login';
 import { Registro } from './Registro';
 import { Create } from './CreatePostIt';
 import { Home } from './Home';
-
-
+import { Perfil } from './Perfil';
 
 export class Root extends React.Component<any, any>{
   state = {
     usuarios: null,
-    pagina: 'home'
+    usuario: null,
+    pagina: 'login'
   };
 
   irA(page) {
     this.setState({
       pagina: page
+    });
+  }
+
+  setUsuario(user) {
+    this.setState({
+      usuario: user
     });
   }
 
@@ -28,7 +34,7 @@ export class Root extends React.Component<any, any>{
           this.setState({
             usuarios: res.users
           });
-          console.log(this.state.usuarios)
+          console.log(this.state.usuarios);
         }
       });
   }
@@ -36,13 +42,15 @@ export class Root extends React.Component<any, any>{
   render() {
     switch (this.state.pagina) {
       case 'login':
-        return <Login irA={page => this.irA(page)} />;
+        return <Login irA={page => this.irA(page)} setUsuario={user => this.setUsuario(user)} />;
       case 'registro':
-        return <Registro />;
+        return <Registro irA={page => this.irA(page)} usuario={this.state.usuario} />;
       case 'home':
-      return <Home />;
+        return <Home irA={page => this.irA(page)} usuario={this.state.usuario} />;
       case 'create':
-        return <Create />;
+        return <Create usuario={this.state.usuario} irA={page => this.irA(page)} />;
+      case 'perfil':
+        return <Perfil usuario={this.state.usuario} irA={page => this.irA(page)} />;
     };
   }
 }

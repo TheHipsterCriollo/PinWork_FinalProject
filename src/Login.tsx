@@ -21,6 +21,8 @@ export class Login extends React.Component<any, any>{
       .then(res => {
         if (res.mensaje == 'logged') {
           localStorage.setItem('usuario', JSON.stringify(res.user));
+          this.props.setUsuario(res.user);
+          this.props.irA('home');
           console.log(res.mensaje);
         } else {
           alert(res.mensaje);

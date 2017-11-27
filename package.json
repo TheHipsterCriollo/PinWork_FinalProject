@@ -17,7 +17,8 @@
     "gulp-livereload": "^3.8.1",
     "jquery": "^3.2.1",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-dropzone": "^4.2.3"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^3.2.3",

@@ -19,6 +19,7 @@ export class Registro extends React.Component<any, any>{
       .then(e => e.json())
       .then(res => {
         console.log(res.mensaje);
+        this.props.irA('login');
       });
   }
 
