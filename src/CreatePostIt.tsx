@@ -40,9 +40,13 @@ export class Create extends React.Component<any, any>{
   }
 
   render() {
-    return <div id='create'>
-      <h3> {this.props.usuario.nombre} selecciona tu tipo de post-it </h3>
-      <div className='btnTypes'>
+    return <div id='containerH'>
+    <nav className='rectangle'>
+      <button id='add' onClick={e => this.props.irA('create')}></button>
+      <button id='homeb' onClick={e => this.props.irA('home')}></button>
+      <button id='perfil' onClick={e => this.props.irA('perfil')}></button>
+    </nav>
+      <div className='btnTypes' id='filtros'>
         <form onChange={e => this.tipoDePost(e)}>
           <input type='radio' name='typePost' value='txt' defaultChecked /> Texto
           <input type='radio' name='typePost' value='img' /> Imagen
@@ -81,11 +85,7 @@ export class Create extends React.Component<any, any>{
               <input type="submit" className="submitPost" />
             </form>}
       </div>
-      <nav>
-        <button id='add' onClick={e => this.props.irA('create')}>Crear</button>
-        <button id='homeb' onClick={e => this.props.irA('home')}>Home</button>
-        <button id='perfil' onClick={e => this.props.irA('perfil')}>Perfil</button>
-      </nav>
+
     </div>;
   }
 }
