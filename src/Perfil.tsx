@@ -31,7 +31,12 @@ export class Perfil extends React.Component<any, any>{
   }
 
   render() {
-    return <div id='perfil'>
+    return <div id='containerH'>
+    <div className='rectangle'>
+    <button id='homeb' onClick={e => this.props.irA('home')}></button>
+    <button id='add' onClick={e => this.props.irA('create')}></button>
+    <button id='perfil' onClick={e => this.props.irA('perfil')}></button>
+    </div>
       <div id='profImage'>
       {!this.state.isImage ?
         <form onSubmit={e => this.setProfImg(this.state.archivo)}>
@@ -47,15 +52,12 @@ export class Perfil extends React.Component<any, any>{
       <img src={'http://localhost:3003/fotos/'+this.state.isImage} width='150'/>}
       </div>
       <div id='info' onClick={ e => console.log(this.state.isImage)}>
-        <h1>{this.state.usuario.nombre}</h1>
-        <h2>{this.state.usuario.cargo}</h2>
-        <h2>{this.state.usuario.correo}</h2>
       </div>
-      <nav>
-        <button id='add' onClick={e => this.props.irA('create')}>Crear</button>
-        <button id='homeb' onClick={e => this.props.irA('home')}>Home</button>
-        <button id='perfil' onClick={e => this.props.irA('perfil')}>Perfil</button>
-      </nav>
+      <div className='rec'>
+      <h1>{this.state.usuario.nombre}</h1>
+      <h2>{this.state.usuario.cargo}</h2>
+      <h2>{this.state.usuario.correo}</h2>
+      </div>
     </div>;
   }
 }

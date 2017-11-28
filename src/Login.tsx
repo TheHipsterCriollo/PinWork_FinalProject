@@ -31,12 +31,13 @@ export class Login extends React.Component<any, any>{
   }
 
   render() {
-    return <div id='login'>
-      <form onSubmit={e => this.ingresarUsuario(e)}>
-        <input type="text" name="user" placeholder="Usuario" /><br />
-        <input type="password" name="pass" placeholder="Contraseña" /><br />
-        <input type="submit" value='Login' /><br />
-        <a onClick={e=>this.props.irA('registro')}><u>Registro</u></a>
+    return <div id='containerL'>
+    <div className='logo' />
+      <form id='formu' onSubmit={e => this.ingresarUsuario(e)}>
+        <input id='texto' type="text" name="user" placeholder="Usuario" /><br />
+        <input id='texto' type="password" name="pass" placeholder="Contraseña" /><br />
+        <input className='btn' type="submit" value='Login' /><br />
+        <a id='registro' onClick={e=>this.props.irA('registro')}><u>Registro</u></a>
       </form>
     </div>;
   }

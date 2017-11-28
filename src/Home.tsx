@@ -35,7 +35,12 @@ export class Home extends React.Component<any, any>{
   }
 
   render() {
-    return <div id='home'>
+    return <div id='containerH'>
+    <nav className='rectangle'>
+    <button id='homeb' onClick={e => this.props.irA('home')}></button>
+    <button id='addP' onClick={e => this.props.irA('create')}></button>
+    <button id='perfil' onClick={e => this.props.irA('perfil')}></button>
+    </nav>
       <div id='filtros'>
         <form onChange={e => this.filtrado(e)}>
           <input type='radio' name='typePost' value='txt' /> Texto
@@ -52,9 +57,7 @@ export class Home extends React.Component<any, any>{
           tipo={obj.tipo} />)}
       </div>
       <nav>
-        <button id='add' onClick={e => this.props.irA('create')}>Crear</button>
-        <button id='homeb' onClick={e => this.props.irA('home')}>Home</button>
-        <button id='perfil' onClick={e => this.props.irA('perfil')}>Perfil</button>
+
       </nav>
     </div>;
   }

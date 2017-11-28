@@ -1,0 +1,558 @@
+/*--------login movil*/
+* {
+font-family: 'Roboto', sans-serif;
+}
+/*#container{
+    background-image: url(../esportado/login.png);
+    width: 100%;
+    height: 900px;
+    background-repeat: no-repeat;
+}
+#formulario{
+    margin-left: 25px;
+    margin-right: 80%;
+}
+#texto{
+    padding: 4px;
+     font-size: 12px;
+     border-width: 1px;
+     border-color: #CCCCCC;
+     background-color: #FFFFFF;
+     color: #000000;
+     border-style: solid;
+     border-radius: 0px;
+     box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+     text-shadow: undefined 0px 0px 5px px rgba(66,66,66,.75);
+    margin-top: 10%;
+
+}
+#texto:focus {
+     outline:none;
+}
+#logo{
+    margin-top: 5%;
+    margin-left: 7%;
+}
+.btn {
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  border-radius: 20px;
+  -webkit-box-shadow: 6px 6px 3px #11188f;
+  -moz-box-shadow: 6px 6px 3px #11188f;
+  box-shadow: 3px 4px 3px #11188f;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 11px;
+  background: #2530fa;
+    padding: 8px 12px 8px 12px;
+  text-decoration: none;
+    border: 0;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+
+.btn:hover {
+  background: #5e49fc;
+  text-decoration: none;
+}*/
+
+/*registro movil----------------*/
+
+/*#container{
+    background-image: url(../esportado/registro.png);
+    width: 100%;
+    height: 900px;
+    background-repeat: no-repeat;
+}
+.form{
+    margin-left: 30px;
+    margin-right: 75%;
+}
+#texto{
+    padding: 4px;
+     font-size: 12px;
+     border-width: 1px;
+     border-color: #CCCCCC;
+     background-color: #FFFFFF;
+     color: #000000;
+     border-style: solid;
+     border-radius: 0px;
+     box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+     text-shadow: undefined 0px 0px 5px px rgba(66,66,66,.75);
+    margin-top: 10%;
+    border-radius: 5px;
+}
+.btn {
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  border-radius: 20px;
+  -webkit-box-shadow: 6px 6px 3px #11188f;
+  -moz-box-shadow: 6px 6px 3px #11188f;
+  box-shadow: 3px 4px 3px #11188f;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 11px;
+  background: #2530fa;
+    padding: 8px 12px 8px 12px;
+  text-decoration: none;
+    border: 0;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+
+
+.btn:hover {
+  background: #5e49fc;
+  text-decoration: none;
+}
+.logo2{
+    margin-left: 13%;
+    margin-top: 1%;
+}*/
+
+/*home--------------------*/
+
+/*#container{
+    background-image: url(../esportado/background.png);
+    width: 100%;
+    height: 900px;
+    background-repeat: no-repeat;
+}
+.rectangle{
+    background-color: white;
+    opacity: 0.5;
+    width: 100%;
+    height: 50px;
+    margin-top: -630px;
+    position: fixed;
+}
+#add{
+ margin-left: 1%;
+    margin-top: 0.7%;
+}
+#homeb{
+ margin-left: 4%;
+}
+#perfil{
+ margin-left: 4%;
+}*/
+
+/*perfil movil----------------*/
+
+/*#container{
+    background-image: url(../esportado/background.png);
+    width: 100%;
+    height: 900px;
+    background-repeat: no-repeat;
+}
+.rectangle{
+    background-color: white;
+    opacity: 0.5;
+    width: 100%;
+    height: 50px;
+    margin-top: -630px;
+    position: absolute;
+}
+#add{
+ margin-left: 1%;
+    margin-top: 0.7%;
+}
+#homeb{
+ margin-left: 4%;
+}
+#perfil{
+ margin-left: 4%;
+}*/
+
+.rec {
+  color: white;
+  background-color: black;
+  opacity: 0.5;
+  width: 200px;
+  height: 130px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+/*
+#botonp{
+    border-radius: 10px;
+    border: 0px;
+    margin-top: 18px;
+    margin-left: 60px;
+}
+#imagen{
+    padding-top: 30px;
+    margin-left: 85px;
+}*/
+
+/*web login------------------ */
+
+#containerL {
+  background-image: url('http://localhost:3003/style/expo/login.png');
+  width: 100%;
+  height: 800px;
+}
+
+.logo {
+  background-image: url('http://localhost:3003/style/expo/logo.png');
+  background-repeat: no-repeat;
+  width: 20%;
+  height: 40%;
+  margin-left: 40%;
+}
+
+#texto {
+  padding: 4px;
+  font-size: 20px;
+  border-width: 1px;
+  border-color: #CCCCCC;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-style: solid;
+  border-radius: 0px;
+  box-shadow: 0px 0px 5px rgba(66, 66, 66, .75);
+  text-shadow: undefined 0px 0px 5px px rgba(66, 66, 66, .75);
+  margin-top: 3%;
+  margin-right: 50%;
+  margin-left: 40%;
+  border: 0px;
+  border-radius: 10px;
+}
+
+/*#formu{
+    margin-right: 50%;
+    margin-left: 40%;
+}*/
+
+.btn {
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  border-radius: 20px;
+  -webkit-box-shadow: 6px 6px 3px #11188f;
+  -moz-box-shadow: 6px 6px 3px #11188f;
+  box-shadow: 3px 4px 3px #11188f;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 17px;
+  background: #2530fa;
+  padding: 8px 12px 8px 12px;
+  text-decoration: none;
+  border: 0;
+  margin-left: 47%;
+  margin-top: 2%;
+}
+
+.btn:hover {
+  background: #5e49fc;
+  text-decoration: none;
+}
+
+#registro {
+  position: absolute;
+  margin-top: 3%;
+  margin-left: 47%;
+  font-size: 20px;
+}
+
+/*registro web*/
+
+#containerR {
+  background-image: url('http://localhost:3003/style/expo/registro.png');
+  width: 100%;
+  height: 800px;
+}
+
+.logo2 {
+  background-image: url('http://localhost:3003/style/expo/logo2.png');
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 30%;
+  margin-left: 45%;
+}
+
+#texto2 {
+  padding: 4px;
+  font-size: 20px;
+  border-width: 1px;
+  border-color: #CCCCCC;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-style: solid;
+  border-radius: 0px;
+  box-shadow: 0px 0px 5px rgba(66, 66, 66, .75);
+  text-shadow: undefined 0px 0px 5px px rgba(66, 66, 66, .75);
+  margin-top: 20%;
+  border: 0px;
+  border-radius: 10px;
+}
+
+#formu2 {
+  margin-right: 50%;
+  margin-left: 37%;
+}
+
+.btn2 {
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  border-radius: 20px;
+  -webkit-box-shadow: 6px 6px 3px #11188f;
+  -moz-box-shadow: 6px 6px 3px #11188f;
+  box-shadow: 3px 4px 3px #11188f;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 17px;
+  background: #2530fa;
+  padding: 8px 12px 8px 12px;
+  text-decoration: none;
+  border: 0;
+  margin-left: 68%;
+  margin-top: 20%;
+}
+
+.btn2:hover {
+  background: #5e49fc;
+  text-decoration: none;
+}
+
+/*home web..........*/
+
+#containerH {
+  background-image: url('http://localhost:3003/style/expo/back.png');
+  width: 100%;
+  height: 900px;
+  display: flex;
+}
+
+.rectangle {
+  background-color: white;
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  z-index: 1;
+}
+
+#filtros {
+  color: white;
+  font-size: 25px;
+  float: left;
+  position: absolute;
+  margin-top: 85px;
+  margin-left: 30%;
+  width: 450px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #006DF0;
+  padding: 8px;
+}
+
+#contenido {
+  float: left;
+  position: static;
+  margin-top: 140px;
+  /* margin: 140px auto 140px; */
+  margin-left: 37%;
+}
+
+.postit {
+  text-align: center;
+  align-self: center;
+  width: 30%;
+  padding: 2%;
+  margin: 20px;
+  -webkit-box-shadow: 0px 10px 39px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 39px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 39px -5px rgba(0, 0, 0, 0.75);
+}
+
+.postit img {
+  width: 90%;
+  height: auto;
+}
+
+#homeb {
+  margin-top: 0.5%;
+  margin-left: 5%;
+  background-image: url('http://localhost:3003/style/expo/home.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 60px;
+  height: 60px;
+}
+
+#addP {
+  margin-left: 30%;
+  background-image: url('http://localhost:3003/style/expo/add.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 60px;
+  height: 60px;
+}
+
+#perfil {
+  margin-left: 30%;
+  background-image: url('http://localhost:3003/style/expo/perfil.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 60px;
+  height: 60px;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  /* home: */
+  /*.containerH{
+    background-image: url(../esportado/background.png);
+    width: 100%;
+    height: 900px;
+    background-repeat: no-repeat;
+}
+.rectangle{
+    background-color: white;
+    opacity: 0.5;
+    width: 100%;
+    height: 50px;
+    margin-top: 270px;
+    position: fixed;
+}
+#add{
+ margin-left: 17%;
+    margin-top: 3%;
+    background-image: url(../esportado/add.png);
+    background-repeat: no-repeat;
+    width: 12%;
+    height: 70%;
+}
+#homeb{
+ margin-left: 4%;
+    background-image: url(../esportado/homeb.png);
+    background-repeat: no-repeat;
+    width: 12%;
+    height: 70%;
+}
+#perfil{
+ margin-left: 15%;
+    background-image: url(../esportado/perfil.png);
+    background-repeat: no-repeat;
+    width: 12%;
+    height: 70%;
+}*/
+  /*login*/
+  /*.containerL{
+    background-image: url(../esportado/login.png);
+    width: 100%;
+    height: 900px;
+    background-repeat: no-repeat;
+}
+#formulario{
+    margin-left: 30px;
+    margin-right: 70%;
+}
+#texto{
+    padding: 4px;
+     font-size: 12px;
+     border-width: 1px;
+     border-color: #CCCCCC;
+     background-color: #FFFFFF;
+     color: #000000;
+     border-style: solid;
+     border-radius: 0px;
+     box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+     text-shadow: undefined 0px 0px 5px px rgba(66,66,66,.75);
+    margin-top: 5%;
+
+}
+#texto:focus {
+     outline:none;
+}
+.logo{
+    background-image: url(../esportado/logo.png);
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 15%;
+    margin-left: 30%;
+}
+.btn {
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  border-radius: 20px;
+  -webkit-box-shadow: 6px 6px 3px #11188f;
+  -moz-box-shadow: 6px 6px 3px #11188f;
+  box-shadow: 3px 4px 3px #11188f;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 11px;
+  background: #2530fa;
+    padding: 8px 12px 8px 12px;
+  text-decoration: none;
+    border: 0;
+    margin-left: 120%;
+    margin-top: 4%;
+}
+
+.btn:hover {
+  background: #5e49fc;
+  text-decoration: none;
+}
+    #registro{
+    margin-left: 22%;
+    font-size: 13px;
+}*/
+  /*registro*/
+  /*.containerR{
+    background-image: url(../esportado/registro.png);
+    width: 100%;
+    height: 900px;
+    background-repeat: no-repeat;
+}
+#formu2{
+    margin-left: 40px;
+    margin-right: 75%;
+    margin-top: 3%;
+}
+#texto2{
+    padding: 4px;
+     font-size: 12px;
+     border-width: 1px;
+     border-color: #CCCCCC;
+     background-color: #FFFFFF;
+     color: #000000;
+     border-style: solid;
+     border-radius: 0px;
+     box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+     text-shadow: undefined 0px 0px 5px px rgba(66,66,66,.75);
+    margin-top: 10%;
+    border-radius: 5px;
+}
+.btn2 {
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  border-radius: 20px;
+  -webkit-box-shadow: 6px 6px 3px #11188f;
+  -moz-box-shadow: 6px 6px 3px #11188f;
+  box-shadow: 3px 4px 3px #11188f;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 11px;
+  background: #2530fa;
+    padding: 8px 12px 8px 12px;
+  text-decoration: none;
+    border: 0;
+    margin-left: 120%;
+    margin-top: 10%;
+}
+
+
+.btn2:hover {
+  background: #5e49fc;
+  text-decoration: none;
+}
+.logo2{
+    background-image: url(../esportado/logo2.png);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 8%;
+    margin-left: 35%;
+}*/
+}

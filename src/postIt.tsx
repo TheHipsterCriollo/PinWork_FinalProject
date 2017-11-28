@@ -29,19 +29,20 @@ export class PostIt extends React.Component<any, any>{
   }
 
   render() {
-    return <div id={this.state.tipo}>
-      {this.state.tipo == 'txt' ? <div >
+    return <div id={this.state.tipo} >
+      {this.state.tipo == 'txt' ? <div className='postit' style={{ backgroundColor: '#EEDE27' }}>
         <h1>{this.props.autor}</h1>
         <p>{this.props.texto}</p>
-      </div> : this.state.tipo == 'file' ? <div>
+      </div> : this.state.tipo == 'file' ? <div className='postit' style={{ backgroundColor: '#CF757F' }}>
         <h1>{this.props.autor}</h1>
         <p>{this.props.texto}</p>
         <a>{this.props.archivo}</a>
-      </div> : <div>
+      </div> : <div className='postit' style={{ backgroundColor: '#7A82CB' }}>
             <h1>{this.props.autor}</h1>
-            <p>{this.props.texto}</p>
-            <img src={'http://localhost:3003/fotosp/'+this.props.archivo} width='200' />
-          </div>}
+            <p><strong>{this.props.texto}</strong></p>
+            <img src={'http://localhost:3003/fotosp/' + this.props.archivo} width='200' />
+          </div>
+      }
     </div>;
   }
 }
