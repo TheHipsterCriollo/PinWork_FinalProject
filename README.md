@@ -1,12 +1,4 @@
-## Instalación:
-* Click derecho -> Git Bash Here
-* git clone https://vagyriag@bitbucket.org/vagyriag/react_seed.git
-* cd react_seed
-* npm install
-
-## Uso:
-* npm run dev
-* Abrir [http://localhost:8080](http://localhost:8080)
-
-## Exportar:
-* npm run prod
+## PinWork:
+* PinWork it's a web application that allows working groups to make digital
+* Post-its where they can add files, images or simply notes.
+* Designed for web and mobile version
